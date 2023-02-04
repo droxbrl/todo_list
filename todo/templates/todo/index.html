@@ -19,10 +19,10 @@
 
                 {% if todo.is_complete == False %}
                     <span class="ui gray label">Не завершено</span>
-                    <a class="ui primary basic button" href="/update/{{ todo.id }}">Закрыть</a>
+                    <a class="ui primary basic button" href="/update/{{ todo.id }}">Закрыть задачу</a>
                 {% else %}
                     <span class="ui green label">Завершено</span>
-                    <a class="ui blue button" href="/update/{{ todo.id }}">Открыть</a>
+                    <a class="ui blue button" href="/update/{{ todo.id }}">Открыть задачу</a>
                 {% endif %}
                 <a class="ui negative basic button" href="/delete/{{ todo.id }}">Удалить</a>
             </div>
